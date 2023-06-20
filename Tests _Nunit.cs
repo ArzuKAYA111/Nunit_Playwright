@@ -67,12 +67,12 @@ namespace Playwright_MyProject
             await Page.GotoAsync("http://www.eaapp.somee.com");
             await Page.ClickAsync("text=Login");
 
-       /*    await page.ScreenshotAsync(new PageScreenshotOptions
-                    {
-                 // ScrennShot root directory de net7.0 folder'in icinde olusuyor
-             Path="testScrnshot.jpg"
-            });
-*/
+            await Page.ScreenshotAsync(new PageScreenshotOptions
+                {
+                // ScrennShot root directory de net7.0 folder'in icinde olusuyor
+                Path = "testScrnshot.jpg"
+                });
+
             await Page.FillAsync("id=UserName","admin");
             await Page.FillAsync("#Password","password");
 
