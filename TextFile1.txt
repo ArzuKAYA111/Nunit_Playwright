@@ -1,0 +1,21 @@
+﻿
+                             Running tests from terminal
+Running all tests
+
+dotnet test
+
+Running a single test file
+
+dotnet test --filter "MyClassName"
+
+Run a set of test files
+
+dotnet test --filter "MyClassName1|MyClassName2"
+
+****** How we run tests from terminal with opening browser option  *********
+
+1- dotnet test -- Playwright.LunchOptions.Headless=false   // it did not work
+
+ //this worked
+2-   $env:HEADED="1"   
+     dotnet test
